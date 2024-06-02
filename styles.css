@@ -1,0 +1,27 @@
+body {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+table {
+  border-width: 1px;
+  border-color: #f5f9ff;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+tr {
+  background-color: #f8f8f8;
+}
+th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 1px;
+}
