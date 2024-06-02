@@ -11,12 +11,13 @@
 </head>
 
 <body>
-
+    <div id="navbar"></div>
+    <h1 class="text-center text-4xl font-bold mt-10 mb-4"> ODOO Service List</h1>
     <div class="overflow-x-auto">
 
         <table>
             <thead>
-                <tr class="bg-gray-200">
+                <tr >
                     <th>Category</th>
                     <th>App Name</th>
                     <th>Description</th>
@@ -24,7 +25,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Finance</td>
+                    <td><strong>Finance</strong></td>
                     <td>Accounting</td>
                     <td>Manage financial and analytic accounting</td>
                 </tr>
@@ -53,8 +54,9 @@
                     <td>Sign</td>
                     <td>Sign documents online</td>
                 </tr>
-                <tr>
-                    <td>Sales</td>
+                
+                <tr >
+                    <td><strong>Sales</strong></td>
                     <td>CRM</td>
                     <td>Track leads and close opportunities</td>
                 </tr>
@@ -84,7 +86,7 @@
                     <td>Manage contracts, deliveries &amp; returns</td>
                 </tr>
                 <tr>
-                    <td>Websites</td>
+                    <td><strong>Websites</strong></td>
                     <td>Website Builder</td>
                     <td>Enterprise website builder</td>
                 </tr>
@@ -114,7 +116,7 @@
                     <td>Manage and publish courses</td>
                 </tr>
                 <tr>
-                    <td>Supply Chain</td>
+                    <td><strong>Supply Chain</strong></td>
                     <td>Inventory</td>
                     <td>Manage your stock and logistics activities</td>
                 </tr>
@@ -144,7 +146,7 @@
                     <td>Control the quality of your products</td>
                 </tr>
                 <tr>
-                    <td>Human Resources</td>
+                    <td><strong>Human Resources</strong></td>
                     <td>Employees</td>
                     <td>Centralize employee information</td>
                 </tr>
@@ -174,7 +176,7 @@
                     <td>Manage your fleet and track car costs</td>
                 </tr>
                 <tr>
-                    <td>Marketing</td>
+                    <td><strong>Marketing</strong></td>
                     <td>Marketing Automation</td>
                     <td>Build automated mailing campaigns</td>
                 </tr>
@@ -204,7 +206,7 @@
                     <td>Send your surveys or share them live</td>
                 </tr>
                 <tr>
-                    <td>Services</td>
+                    <td><strong>Services</strong></td>
                     <td>Project</td>
                     <td>Organize and plan your projects</td>
                 </tr>
@@ -234,7 +236,7 @@
                     <td>Allow people to book meetings in your agenda</td>
                 </tr>
                 <tr>
-                    <td>Productivity</td>
+                    <td><strong>Productivity</strong></td>
                     <td>Discuss</td>
                     <td>Chat, mail gateway and private channels</td>
                 </tr>
@@ -259,14 +261,19 @@
                     <td>Manage your knowledge library</td>
                 </tr>
                 <tr>
-                    <td>Customization</td>
+                    <td><strong>Customization</strong></td>
                     <td>Studio</td>
                     <td>Create and customize your Odoo apps</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
+    <script>
+        // Fetch and insert navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => document.getElementById('navbar').innerHTML = html);
+    </script>
 </body>
 
 </html>
